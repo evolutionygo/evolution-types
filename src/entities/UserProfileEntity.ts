@@ -38,6 +38,9 @@ export class UserProfileEntity {
 	@Column({ name: "discord_id", nullable: true })
 	discordId: string;
 
+	@Column({ name: "participant_id", nullable: true })
+	participantId: string | null;
+
 	@CreateDateColumn({ name: "created_at" })
 	createdAt: Date;
 

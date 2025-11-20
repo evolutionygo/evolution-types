@@ -5,6 +5,7 @@ import { config } from "./config";
 import { AchievementEntity } from "./entities/AchievementEntity";
 import { DuelResumeEntity } from "./entities/DuelResumeEntity";
 import { LightningTournamentEntity } from "./entities/LightningTournamentEntity";
+import { LightningRankingEntity } from "./entities/LightningRankingEntity";
 import { MatchResumeEntity } from "./entities/MatchResumeEntity";
 import { PlayerStatsEntity } from "./entities/PlayerStatsEntity";
 import { TournamentEntity } from "./entities/TournamentEntity";
@@ -31,6 +32,7 @@ const options: DataSourceOptions = {
 		UserAchievementEntity,
 		LightningTournamentEntity,
 		UserBanEntity,
+		LightningRankingEntity,
 	],
 	subscribers: [],
 	migrations: [join(__dirname, "/migrations/*.ts")],
